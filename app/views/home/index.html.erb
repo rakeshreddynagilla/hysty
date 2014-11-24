@@ -1,0 +1,11 @@
+<h3>Overall most viewed today</h3>
+<% @videos.each do |video| %>
+	<%= link_to "#{video.title}", video.player_url, target: "_blank"%>
+	<br/>
+<% end %>
+
+<h3>India most viewed today</h3>
+<% @india_videos.each do |video| %>
+	<%= link_to "#{video.title}", video.player_url, target: "_blank"%>
+	<br/>
+<% end %>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Have you seen this yet!</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<p class="navbar-text pull-right">
+				</p>
+				<div class="container-fluid" style="background-color:#74AFAD">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-6 col-md-offset-2">
+							<a class="brand" href="/"><span style="width:auto;display:inline-block;font-size:58px;color:#FFFFFF;">Have you seen these yet !?!?</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="background-color:#F7F7F9;">
+			<div class="row">
+				<div class="col-md-12">
+					<% if flash[:notice]%>
+				    <p id="flash_notice" style="color:red;"><%= flash[:notice] %></p>
+				  <% end %>
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+	  <div class="footer">
+			Copyright 2014 © Rock8y Arts<br>
+			Loaded <%= Time.now.asctime %>
+		</div>
+</body>
+</html>

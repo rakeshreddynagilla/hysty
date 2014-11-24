@@ -1,0 +1,13 @@
+// Set the correct sprite paths
+@import "bootstrap";
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
+
+.footer {
+     border-top: 1px solid #E5E5E5;
+     margin-top: 45px;
+     padding: 35px 0 36px;
+     text-align: center;
+ }
